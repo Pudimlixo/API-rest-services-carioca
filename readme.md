@@ -1,0 +1,1 @@
+Projeto de criação de API RESTful que cria serviços fictícios a partir de um banco de dados em memória que representa a tabela de times do campeonato carioca

@@ -1,0 +1,31 @@
+Tasks a serem feitas nesse trabalho:
+
+1 - Fazer os campos calculados de cada time no json (São 3 no total)
+
+No banco de dados em memória, os campos de pontos, saldo de gols e desempenho não podem ser só colocados lá estaticamente mas sim calculados, então um vai ficar responsável por fazer a lógica e calcular os pontos, o saldo de gols e o rendimento
+
+Lógica matemática de cada campo:
+
+Pontos = (vitorias*3)+empates
+Saldo de gols = golsPro-golsContra
+Desempenho = (pontosDeUmTime/pontosDisputados)*100
+
+Para se fazer todos esses cálculos, vai ser necessário ter vitórias, empates e derrotas de cada time, além de gols pro e gols contra. Com isso, será possível atribuir valores a esses "campos calculados".
+
+2 - Criação dos serviços (São 5 no total)
+
+Através da criação de 5 rotas criadas no "index.js", cada uma vai representar um serviço, e cada serviço deve ser uma função criada no arquivo "services" e deve ser exportada para o arquivo index.js
+
+Deve ser informado como serviço:
+
+- Os times de um determinado grupo
+- 5 times com maior saldo de gols
+- 5 times com o melhor desempenho
+- 5 times com a defesa mais vazada (que mais levaram gols contra)
+- Os times que passaram para a próxima fase (Os dois primeiros de cada grupo) ou (Os dois de cada grupo com mais pontos) => 2 lógicas
+
+Deve ser tudo testado e enviado na lição do teams através de um teste do POSTMAN 
+
+
+
+
