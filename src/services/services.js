@@ -1,7 +1,7 @@
-let {times} = require('/src/database/database-memory.js')
+let {tabelaTimes} = require('/src/database/database-memory.js')
 
-function grupoTime(x){
-
+function grupoTime(){
+    
 }
 
 function timesMaiorSaldoGols(){
@@ -16,6 +16,7 @@ function timesMaisVazados(){
     
 }
 
+//Passaram para a próxima fase
 function timesCarioca(){
     
 }
