@@ -4,27 +4,32 @@ const porta = 3333
 let {grupoTime, timesMaiorDesempenho, timesMaiorSaldoGols, timesCarioca, timesMaisVazados} = require('./services/services.js')
 
 app.get('/',(req,res)=>{
-    res.send(`Menu da aplicação`)
+    res.send(`-----Menu da aplicação-----`)
 })
 
-app.get('/times/grupo/:',(req,res)=>{
-    res.json()
+app.get('/times/grupoUnico',(req,res)=>{
+    const times = grupoTime()
+    res.json(times)
 })
 
 app.get('/times/maiorsaldo',(req,res)=>{
-    res.json()
+    const times = timesMaiorSaldoGols()
+    res.json(times)
 })
 
 app.get('/times/melhordesempenho',(req,res)=>{
-    res.json()
+    const times = timesMaiorDesempenho()
+    res.json(times)
 })
 
 app.get('/times/defesamaisvazada',(req,res)=>{
-    res.json()
+    const times = timesMaisVazados()
+    res.json(times)
 })
 
 app.get('/times/proximafase',(req,res)=>{
-    res.json()
+    const times = timesCarioca()
+    res.json(times)
 })
 
 
