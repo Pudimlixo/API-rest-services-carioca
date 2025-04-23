@@ -5,7 +5,22 @@ function grupoTime(){
 }
 
 function timesMaiorSaldoGols(){
-    
+    let tabelaOrdenada = [...tabelaTimes].sort((a, b) => {
+        const saldoA = a.saldoGols;
+        const saldoB = b.saldoGols;
+
+        if (saldoB > saldoA) {
+            return 1; // Coloca `b` antes de `a`
+        }
+
+        if (saldoA > saldoB) {
+            return -1; // Coloca `a` antes de `b`
+        }
+
+        return 0; // Mantém a ordem se forem iguais
+    });
+
+    return tabelaOrdenada.slice(0, 5); // Retorna os 5 primeiros times
 }
 
 function timesMaiorDesempenho(){
@@ -28,6 +43,22 @@ function timesMaiorDesempenho(){
 }
 
 function timesMaisVazados(){
+    let tabelaOrdenada = [...tabelaTimes].sort((a, b) => {
+        const defesaA = a.golsContra;
+        const defesaB = b.golsContra;
+
+        if (defesaB > defesaA) {
+            return 1; // Coloca `b` antes de `a`
+        }
+
+        if (defesaA > defesaB) {
+            return -1; // Coloca `a` antes de `b`
+        }
+
+        return 0; // Mantém a ordem se forem iguais
+    });
+
+    return tabelaOrdenada.slice(0, 5); // Retorna os 5 primeiros times
     
 }
 
