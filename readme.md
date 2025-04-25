@@ -4,7 +4,6 @@
   <img src="https://img.icons8.com/color/96/000000/trophy.png" alt="Ícone de Troféu">
 </div>
 
-<br>
 
 ## ⚽ Propósito da Aplicação
 
@@ -16,14 +15,12 @@ Esta é uma API RESTful simples construída com Node.js e Express para fornecer 
 - Os 5 times com a defesa mais vazada (que sofreram mais gols).
 - Os 4 times que se classificariam para a próxima fase (baseado no número de pontos).
 
-<br>
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Node.js**: Ambiente de execução JavaScript para o servidor.
 - **Express**: Framework web minimalista e flexível para Node.js.
 
-<br>
 
 ## 🚀 Como Utilizar
 
@@ -272,7 +269,6 @@ A API oferece os seguintes endpoints para acessar os dados:
     ]
     ```
 
-\<br\>
 
 ## 📄 Estrutura dos Arquivos
 
@@ -286,6 +282,5 @@ A API oferece os seguintes endpoints para acessar os dados:
 └── README.md               # Este arquivo.
 ```
 
-\<div align="center"\>
+
 Feito com ❤️ por um entusiasta do futebol\!
-\</div\>
