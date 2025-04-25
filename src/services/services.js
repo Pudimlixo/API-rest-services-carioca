@@ -5,6 +5,7 @@ function grupoTime(){
 }
 
 function timesMaiorSaldoGols(){
+<<<<<<< HEAD
     let tabelaOrdenada = [...tabelaTimes].sort((a,b) => {
         const maisGolsA = parseFloat(a.saldoGols)
         const maisGolsB = parseFloat(b.saldoGols)
@@ -20,6 +21,24 @@ function timesMaiorSaldoGols(){
     })
 
     return tabelaOrdenada.slice(0,5)
+=======
+    let tabelaOrdenada = [...tabelaTimes].sort((a, b) => {
+        const saldoA = a.saldoGols;
+        const saldoB = b.saldoGols;
+
+        if (saldoB > saldoA) {
+            return 1; // Coloca `b` antes de `a`
+        }
+
+        if (saldoA > saldoB) {
+            return -1; // Coloca `a` antes de `b`
+        }
+
+        return 0; // Mantém a ordem se forem iguais
+    });
+
+    return tabelaOrdenada.slice(0, 5); // Retorna os 5 primeiros times
+>>>>>>> 70ee8eabe665e681eeee957de2f3fb8dbeba8804
 }
 
 function timesMaiorDesempenho(){
@@ -42,6 +61,7 @@ function timesMaiorDesempenho(){
 }
 
 function timesMaisVazados(){
+<<<<<<< HEAD
     let tabelaOrdenada = [...tabelaTimes].sort((a,b) => {
         const vazadoA = parseFloat(a.golsContra)
         const vazadoB = parseFloat(b.golsContra)
@@ -57,6 +77,25 @@ function timesMaisVazados(){
 
     return tabelaOrdenada.slice(0,5)
 
+=======
+    let tabelaOrdenada = [...tabelaTimes].sort((a, b) => {
+        const defesaA = a.golsContra;
+        const defesaB = b.golsContra;
+
+        if (defesaB > defesaA) {
+            return 1; // Coloca `b` antes de `a`
+        }
+
+        if (defesaA > defesaB) {
+            return -1; // Coloca `a` antes de `b`
+        }
+
+        return 0; // Mantém a ordem se forem iguais
+    });
+
+    return tabelaOrdenada.slice(0, 5); // Retorna os 5 primeiros times
+    
+>>>>>>> 70ee8eabe665e681eeee957de2f3fb8dbeba8804
 }
 
 //Passaram para a próxima fase
